@@ -63,8 +63,34 @@
         <br>
     </fieldset>
     <br>
+    <fieldset>
+        <legend>Otros datos</legend>
+        <label>Tiempo de estudio</label><br>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+        <br><br>
+        <label>Foto del DNI</label>
+        <br>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+        <br>
+        <br>
+        <input type="range" id="nivel ingles" name="ingles" min="0" max="11" />
+        <label for="Nivel de ingles">Nivel de ingles</label>
+        <br>
+        <br>
+        <label for="url">Pon la URL de tu video favorito</label>
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+            required />
+            <br>
+            <br>
+        <label for="email">Pon tu email de contacto</label>
+
+        <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+
+    </fieldset>
+    <br>
     <button name="enviar" type="submit"><label>enviar</label>
         <button name="resetear" type="reset"><label>Resetear</label>
+
 </form>
 
 </html>
