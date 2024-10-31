@@ -39,6 +39,8 @@ th:nth-child(1) {
 
 td:nth-child(1) {
     background-color: rgb(146, 146, 255);
+    border: 0px outset;
+    border-radius: 10px;
 }
 
 .seginf {
@@ -92,13 +94,16 @@ td:nth-child(1) {
 .apweb:hover {
     background-color: white;
 }
+
 td:nth-child(1):hover {
-    background-color:white;
+    background-color: white;
 }
-#aula{
+
+#aula {
     visibility: hidden;
     display: block;
 }
-td.seginf:hover #aula{
+
+td.seginf:hover #aula {
     visibility: visible;
 }
