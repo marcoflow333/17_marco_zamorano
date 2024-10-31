@@ -1,15 +1,104 @@
-caption{
+table {
+    min-height: 500px;
+    min-width: 700px;
+}
+
+caption {
     background-color: rgb(64, 11, 114);
     border: 5px;
     border-radius: 5px;
     color: white;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bold;
 }
-td{
+
+td,
+th {
     border: 5px outset;
     text-align: center;
-}
-th{
     padding: 10px;
+
+}
+
+th {
     border-radius: 5px;
     background-color: rgb(141, 181, 241);
+}
+
+th:nth-child(1) {
+    background-color: white;
+    border: 0;
+}
+
+.recreo {
+    background-color: yellow;
+    border-radius: 5px;
+    border: 0px outset;
+}
+
+td:nth-child(1) {
+    background-color: rgb(146, 146, 255);
+}
+
+.seginf {
+    background-color: brown;
+}
+
+.recreo:hover {
+    background-color: white;
+}
+
+.servred {
+    background-color: violet;
+}
+
+.ingles {
+    background-color: khaki;
+}
+
+.empresa {
+    background-color: darkturquoise;
+}
+
+.sor {
+    background-color: lawngreen;
+}
+
+.apweb {
+    background-color: gold;
+}
+
+.servred:hover {
+    background-color: white;
+}
+
+.seginf:hover {
+    background-color: white;
+}
+
+.ingles:hover {
+    background-color: white;
+}
+
+.empresa:hover {
+    background-color: white;
+}
+
+.sor:hover {
+    background-color: white;
+}
+
+.apweb:hover {
+    background-color: white;
+}
+td:nth-child(1):hover {
+    background-color:white;
+}
+#aula{
+    visibility: hidden;
+    display: block;
+}
+td.seginf:hover #aula{
+    visibility: visible;
 }
