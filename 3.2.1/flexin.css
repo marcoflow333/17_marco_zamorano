@@ -1,0 +1,48 @@
+.container {
+    gap: 10px;
+    justify-content: end;
+    background-color: purple;
+    padding: 7px;
+    display: flex;
+}
+
+.container2 {
+    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100px;
+}
+
+.caja {
+    background-color: orange;
+    padding: 5px;
+    margin: 5px;
+}
+
+#nav {
+    background-color: white;
+
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#nav ul li {
+    background-color: brown;
+    padding: 10px 15px;
+    border: 5px solid rgb(31, 29, 29);
+    margin: auto;
+}
+
+#nav ul li:hover {
+    background-color: grey;
+}
+
+#nav ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
