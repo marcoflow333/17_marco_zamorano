@@ -3,70 +3,7 @@
 
 <head>
     <title>Mi CV</title>
-    <link rel="stylesheet" href="nombredelcss.css" />
-    <style>
-        header {
-            padding: 2em;
-            text-align: center;
-            background-size: cover;
-            background-image: url(hero-cit.jpg);
-            background-position: center;
-            color: white;
-        }
-
-        img {
-            border-radius: 40%;
-            max-width: 150px;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Courier New';
-        }
-
-        h4 {
-            color: #19587f;
-        }
-
-        h3 {
-            color: #0e4061;
-        }
-
-        section {
-            margin-left: 15px;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        nav ul li:hover{
-            background-color: #90c7e9;
-        }
-
-        nav ul li{
-            border: 5px outset;
-            border-radius: 5px;
-        }
-
-        .knowledge{
-            justify-content: space-between;
-            display: grid;
-            grid-template-columns: 50% 50%;
-        }
-
-        ul>li::before {
-            content: "►";
-            padding: 0.5em;
-            color: #7f919d;
-        }
-        footer{
-            text-align: right;
-            padding-right: 15px;
-           background-color: #90c7e9;
-           min-height: 125px;
-        }
-    </style>
+    <link rel="stylesheet" href="estilito.css" />
 </head>
 
 <body>
@@ -74,14 +11,14 @@
         <img src="cv.png">
         <h1>Marco Zamorano</h1>
         <p> Me gusta la tecnologia</p>
-        <nav>
+        <nav id="nav">
             <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="marco.zamorano@educa.madrid.org">Contacto</a></li>
-              <li><a href="https://github.com/marcoflow333/17_marco_zamorano.git">Github</a></li>
-              <li><a href="#">Linkedin</a></li>
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="simple_cv_contact.html">Contacto</a></li>
+                <li><a href="https://github.com/marcoflow333/17_marco_zamorano.git">Github</a></li>
+                <li><a href="www.linkedin.com/in/marco-zamorano-343027274">Linkedin</a></li>
             </ul>
-          </nav>
+        </nav>
     </header>
     <section id="studies">
         <h3>Estudios</h3>
