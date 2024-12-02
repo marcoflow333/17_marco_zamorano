@@ -4,7 +4,7 @@
 <head>
     <title>Ejemplo de Eventos</title>
     <style>
-        #iddeldiv {
+        #micaja {
             max-width: 250px;
         }
     </style>
@@ -14,28 +14,28 @@
 
     <button onclick="cambiarColor()">Cambiar Color</button>
 
-    <div id="iddeldiv" onmouseenter="hola()" onmouseleave="adios()">
+    <div id="micaja" onmouseenter="hola()" onmouseleave="adios()">
         ¡Hola Mundo!
     </div>
 
     <script>
         function cambiarColor() {
-            var div = document.getElementById('iddeldiv');
+            var div = document.getElementById('micaja');
             var divColor = div.style.backgroundColor;
 
-            if (divColor == "black") {
-                div.style.backgroundColor = "pink";
-            } else if (divColor == "pink") {
-                div.style.backgroundColor = "blue";
+            if (divColor == "orange") {
+                div.style.backgroundColor = "green";
+            } else if (divColor == "green") {
+                div.style.backgroundColor = "red";
             } else {
-                div.style.backgroundColor = "black";
+                div.style.backgroundColor = "grey";
             }
         }
         function hola() {
-            document.getElementById("iddeldiv").innerHTML += " HOLA!";
+            document.getElementById("micaja").innerHTML += " HOLA!";
         }
         function adios() {
-            document.getElementById("iddeldiv").innerHTML += " ADIOS!";
+            document.getElementById("micaja").innerHTML += " ADIOS!";
         }
     </script>
 
