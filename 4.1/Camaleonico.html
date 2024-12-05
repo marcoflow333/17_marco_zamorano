@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Ejemplo de Eventos</title>
+    <title>Camaleonico</title>
     <style>
-        #micaja {
-            max-width: 250px;
+        #colordeldiv {
+           min-height: 250px;
         }
     </style>
 </head>
-
 <body>
+    <div id="colordeldiv" onmouseenter="hola()" onmouseleave="adios()">
+     Soy el div camaleonico
+    </div>
+    <br>
 
     <button onclick="cambiarColor()">Cambiar Color</button>
 
-    <div id="micaja" onmouseenter="hola()" onmouseleave="adios()">
-        ¡Hola Mundo!
-    </div>
-
     <script>
         function cambiarColor() {
-            var div = document.getElementById('micaja');
+            var div = document.getElementById('colordeldiv');
             var divColor = div.style.backgroundColor;
 
-            if (divColor == "orange") {
-                div.style.backgroundColor = "green";
-            } else if (divColor == "green") {
-                div.style.backgroundColor = "red";
+            if (divColor == "red") {
+                div.style.backgroundColor = "purple";
+            } else if (divColor == "purple") {
+                div.style.backgroundColor = "blue";
             } else {
-                div.style.backgroundColor = "grey";
+                div.style.backgroundColor = "red";
             }
         }
+
         function hola() {
-            document.getElementById("micaja").innerHTML += " HOLA!";
+            document.getElementById("colordeldiv").innerHTML += " HOLA!";
         }
+
         function adios() {
-            document.getElementById("micaja").innerHTML += " ADIOS!";
+            document.getElementById("colordeldiv").innerHTML += " ADIOS!";
         }
     </script>
-
 </body>
-
-</html>
+</html> 
